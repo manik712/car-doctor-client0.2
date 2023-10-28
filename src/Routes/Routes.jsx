@@ -6,13 +6,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    children:[
+    children: [
       {
-        path:'/',
-        element:<Home></Home>
-      }
-    ]
+        path: "/",
+        element: <Home></Home>,
+      },
+    ],
   },
 ]);
 
-export default router
+export default router;

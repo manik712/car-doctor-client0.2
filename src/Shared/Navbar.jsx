@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.svg";
+import useTheme from "../hook/useTheme";
+import {  BsFillSunFill } from 'react-icons/bs';
+
+import {  FaMoon } from 'react-icons/fa';
+
 
 const Navbar = () => {
+  const { toggleTheme,theme } = useTheme()
+
   const NavBar = (
     <>
       <li>
@@ -19,7 +26,7 @@ const Navbar = () => {
       <li>
        <Link to='/contact'>Contact</Link>
       </li>
-
+      
 
 
     </>
@@ -63,6 +70,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
       <button className="btn btn-outline btn-warning">Appointment</button>
+
+      </div>
+      <div>
+        <button  onClick={toggleTheme}   className="btn btn-circle bg-">{theme === 'dark' ? <BsFillSunFill size={30}></BsFillSunFill> : <FaMoon size={25}></FaMoon>}</button>
       </div>
     </div>
   );

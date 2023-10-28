@@ -2,7 +2,7 @@ import logo from "../assets/logo/logo.svg"
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-base-200 text-base-content">
+    <footer className="footer p-10 bg-base-200 text-base-content dark:bg-slate-600 dark:text-white">
   <aside>
    <img src={logo} alt="" />
   </aside> 

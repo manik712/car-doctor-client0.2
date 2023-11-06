@@ -5,7 +5,6 @@ import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProviders";
-import { Result } from "postcss";
 
 const Login = () => {
   const {signIn} = useContext(AuthContext)

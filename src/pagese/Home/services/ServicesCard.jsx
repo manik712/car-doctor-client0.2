@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const ServicesCard = ({service}) => {
   const {title,img,price}  = service
@@ -11,6 +13,7 @@ const ServicesCard = ({service}) => {
   <div className="card-body  ">
     <h2 className="card-title font-bold">{title}</h2>
      <p className="text-red-600 font-bold"> Price:${price}</p>
+    <Link  to=""> <button className="btn btn-accent">Book Now</button></Link>
     
   </div>
 </div>

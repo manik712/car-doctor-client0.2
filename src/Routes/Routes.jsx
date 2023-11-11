@@ -5,6 +5,7 @@ import Login from "../pagese/Home/login/Login";
 import SignUp from "../pagese/Home/signUp/SignUp";
 import Add from "../pagese/Home/add";
 import Blog from "../pagese/Blog";
+import CheckOut from "../pagese/CheckOut";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:"/blog",
         element:<Blog></Blog>
+      },
+      {
+        path:"/checkout/:id",
+        element:<CheckOut></CheckOut>
       }
     ],
   },
